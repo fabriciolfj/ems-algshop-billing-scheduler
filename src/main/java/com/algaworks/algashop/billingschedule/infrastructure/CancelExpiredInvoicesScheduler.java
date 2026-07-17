@@ -17,6 +17,7 @@ public class CancelExpiredInvoicesScheduler {
     public void runTaks() {
         log.info("tasks started - cancelling expired invoices.");
         applicationService.cancelExpiredInvoices();
+
         log.info("tasks ended - expired invoices.");
     }
 }
