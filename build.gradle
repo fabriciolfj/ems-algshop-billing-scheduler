@@ -1,7 +1,7 @@
 plugins {
 	id 'idea'
 	id 'java'
-	id 'org.springframework.boot' version '4.1.0'
+	id 'org.springframework.boot' version '4.1.2'
 	id 'io.spring.dependency-management' version '1.1.7'
 }
 
@@ -20,7 +20,7 @@ repositories {
 }
 
 ext {
-	set('springCloudVersion', "2025.1.2")
+	set('springCloudVersion', "2025.1.4")
 }
 
 configurations {
@@ -47,7 +47,7 @@ dependencies {
 	testCompileOnly 'org.projectlombok:lombok'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	testAnnotationProcessor 'org.projectlombok:lombok'
-	mockitoAgent('org.mockito:mockito-core:5.14.2') {transitive = false}
+	mockitoAgent('org.mockito:mockito-core') {transitive = false}
 }
 
 dependencyManagement {
